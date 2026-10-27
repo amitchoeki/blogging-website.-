@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ink & Ideas | Blogging Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">Ink<span>&</span>Ideas</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#latest">Latest Blogs</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">STORIES • IDEAS • INSPIRATION</p>
+        <h1>Words that inspire.<br><span>Ideas that stay.</span></h1>
+        <p class="intro">A little corner of the internet for technology, student life, travel and everyday inspiration.</p>
+        <a class="primary-btn" href="#latest">Explore blogs ↓</a>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of a notebook">
+        <div class="sun"></div><div class="book"><div class="book-line"></div><div class="book-line"></div><div class="book-line"></div><span>YOUR<br>STORY</span></div>
+        <div class="sparkle">✦</div>
+      </div>
+    </section>
+
+    <section class="section" id="latest">
+      <div class="section-heading">
+        <div><p class="eyebrow">FRESH FROM THE BLOG</p><h2>Latest stories</h2></div>
+        <span class="post-count" id="post-count">3 stories</span>
+      </div>
+      <div class="filters" aria-label="Filter blog posts">
+        <button class="filter active" data-category="All">All posts</button>
+        <button class="filter" data-category="Technology">Technology</button>
+        <button class="filter" data-category="Student Life">Student Life</button>
+        <button class="filter" data-category="Lifestyle">Lifestyle</button>
+      </div>
+      <div class="blog-grid" id="blog-grid">
+        <article class="blog-card" data-category="Technology">
+          <div class="post-art art-tech"><span>01 / TECH</span><div class="art-symbol">⌘</div></div>
+          <div class="post-content"><p class="category">TECHNOLOGY · 5 MIN READ</p><h3>How technology is changing the way we learn</h3><p>Digital tools can make learning more flexible, creative and accessible when we use them wisely.</p><button class="read-more" data-title="How technology is changing the way we learn" data-text="Technology gives learners access to online courses, videos, coding tools and collaborative projects. The best results come when digital tools support curiosity and regular practice—not when they replace thinking.">Read article ↗</button></div>
+        </article>
+        <article class="blog-card" data-category="Student Life">
+          <div class="post-art art-study"><span>02 / STUDY</span><div class="art-symbol">✎</div></div>
+          <div class="post-content"><p class="category">STUDENT LIFE · 4 MIN READ</p><h3>Small study habits that make a big difference</h3><p>Simple routines, short focused sessions and regular revision can make studying feel more manageable.</p><button class="read-more" data-title="Small study habits that make a big difference" data-text="Start with one clear task, keep distractions away, and study in focused sessions. Review your notes regularly and explain concepts in your own words. Consistency is more useful than waiting for the perfect mood to study.">Read article ↗</button></div>
+        </article>
+        <article class="blog-card" data-category="Lifestyle">
+          <div class="post-art art-life"><span>03 / LIFE</span><div class="art-symbol">☼</div></div>
+          <div class="post-content"><p class="category">LIFESTYLE · 3 MIN READ</p><h3>Finding inspiration in everyday moments</h3><p>Ideas often begin with ordinary things: a conversation, a walk, a book or a new question.</p><button class="read-more" data-title="Finding inspiration in everyday moments" data-text="Keep a small note of interesting questions, places and conversations. Take time to notice details around you and let yourself explore new interests. Inspiration often grows when we stay curious about ordinary life.">Read article ↗</button></div>
+        </article>
+      </div>
+      <p class="empty-message" id="empty-message" hidden>No posts in this category yet.</p>
+    </section>
+
+    <section class="about" id="about">
+      <div><p class="eyebrow">ABOUT THIS BLOG</p><h2>A space to learn<br>and share ideas.</h2></div>
+      <p>Ink & Ideas is a sample blogging website created using HTML, CSS and JavaScript. It brings short, easy-to-read stories together in a clean and responsive layout.</p>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">STAY CURIOUS</p><h2>Get a little inspiration.</h2><p>Enter your email to try the sample subscription interaction.</p></div>
+      <form id="subscribe-form"><input type="email" id="email" placeholder="Your email address" required><button type="submit">Subscribe →</button></form>
+      <p class="form-message" id="form-message" role="status"></p>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#">Ink<span>&</span>Ideas</a><p>Made for curious minds. © <span id="year"></span></p><a href="#home">Back to top ↑</a></footer>
+
+  <dialog id="article-dialog"><button class="close-dialog" id="close-dialog" aria-label="Close article">×</button><p class="eyebrow">FROM INK & IDEAS</p><h2 id="dialog-title"></h2><p id="dialog-text"></p></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
